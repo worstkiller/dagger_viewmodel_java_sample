@@ -27,6 +27,7 @@ public abstract class AppModule {
 
 
     @Provides
+    @Singleton
     @Named("localPref")
     static String provideApiToken() {
         return "pref";

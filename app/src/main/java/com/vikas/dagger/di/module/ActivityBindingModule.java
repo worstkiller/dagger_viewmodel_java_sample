@@ -10,5 +10,5 @@ import dagger.android.ContributesAndroidInjector;
 @Module
 public abstract class ActivityBindingModule {
     @ContributesAndroidInjector
-    abstract MainActivity mainActivity();
+    abstract MainActivity contributesMainActivity();
 }
