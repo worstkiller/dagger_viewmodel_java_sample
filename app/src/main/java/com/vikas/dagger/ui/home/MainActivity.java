@@ -7,7 +7,6 @@ import com.vikas.dagger.utils.Utility;
 
 import javax.inject.Inject;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.lifecycle.ViewModelProviders;
 import dagger.android.support.DaggerAppCompatActivity;
@@ -15,6 +14,7 @@ import dagger.android.support.DaggerAppCompatActivity;
 public class MainActivity extends DaggerAppCompatActivity {
 
     private HomeViewModel homeViewModel;
+
     @Inject
     ViewModelProvider.Factory viewModelFactory;
 
