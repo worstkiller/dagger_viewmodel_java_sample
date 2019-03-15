@@ -14,7 +14,6 @@ import dagger.Binds;
 import dagger.Module;
 import dagger.multibindings.IntoMap;
 
-@SuppressLint("unused")
 @Module
 public abstract class ViewModelModule {
     @Binds

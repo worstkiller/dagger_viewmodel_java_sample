@@ -14,7 +14,7 @@ public class Utility {
 
     public static String getDateFormatted() {
         GregorianCalendar calendar = new GregorianCalendar();
-        SimpleDateFormat dateFormatter = new SimpleDateFormat(DATE_FORMAT, Locale.getDefault());
+        SimpleDateFormat dateFormatter = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS", Locale.getDefault());
         return dateFormatter.format(calendar.getTime().getTime());
     }
 

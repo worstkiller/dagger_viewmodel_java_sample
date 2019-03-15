@@ -1,11 +1,11 @@
 package com.vikas.dagger.ui.home;
 
 import android.app.Application;
+import android.content.Context;
 import android.util.Log;
 
 import com.vikas.dagger.data.model.PostsToday;
 import com.vikas.dagger.data.remote.WebServiceImpl;
-import com.vikas.dagger.di.module.AppModule;
 
 import javax.inject.Inject;
 
@@ -19,13 +19,11 @@ import io.reactivex.observers.DisposableObserver;
 public class HomeViewModel extends AndroidViewModel {
 
     private String TAG = HomeViewModel.class.getSimpleName();
-    private AppModule localModule;
     private WebServiceImpl webService;
 
     @Inject
-    public HomeViewModel(@NonNull Application application, AppModule localModule, WebServiceImpl webService) {
+    public HomeViewModel(@NonNull Application application, Context localModule, WebServiceImpl webService) {
         super(application);
-        this.localModule = localModule;
         this.webService = webService;
         Log.d(TAG, "home view model constructor called");
     }
